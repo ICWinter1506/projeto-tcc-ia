@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ecoinf-ia-global"
+version = "0.1.0"
+description = "Monitoramento Global de Desmatamento com IA Local e Pandas"
+authors = ["Ícaro Oliveira <teu-email@exemplo.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.0"       # Processamento de dados
+streamlit = "^1.30.0"    # Interface Web
+plotly = "^5.18.0"       # Gráficos interativos
+requests = "^2.31.0"     # Para APIs da NASA/INPE
+ollama = "^0.1.0"        # Conexão com a IA local
+python-dotenv = "^1.0.0" # Gestão de variáveis de ambiente
+openpyxl = "^3.1.2"      # Para ler ficheiros Excel se necessário
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
